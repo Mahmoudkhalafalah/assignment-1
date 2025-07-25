@@ -1,0 +1,70 @@
+
+<div [class.d-none] = "displayModal" class="layer-image position-absolute flex-column gap-4 top-0 bottom-0 start-0 end-0 z-2 d-flex align-items-center justify-content-center">
+    <img [src]="imageLayerSrc" class="col-4" alt="">
+    <button class="btn btn-warning" (click)="changeDisplay(true)"> Close</button>
+</div>  
+<div class="container-fluid mt-6">
+    <div class="d-flex flex-column justify-content-center align-items-center h-100">
+        <h1 class="title text-uppercase fw-bold secondary-text">
+            portfolio component
+        </h1>
+        <div class="decoration d-flex gap-3 align-items-center">
+            <span class="before-line secondary-bg"></span>
+            <i class="fa fa-star fs-4 secondary-text my-3"></i>
+            <span class="after-line secondary-bg"></span>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 p-5 align-items-center justify-content-center container row-gap-4">
+            <div class="image-container col">
+                <div class="position-relative overflow-hidden p-0"  (click)="showImage('./poert1.png'); changeDisplay(false)">
+                    <div class="img-overlay img-overlay-1 position-absolute rounded-3 d-flex justify-content-center align-items-center">
+                        <i class="fa fa-plus text-white fa-4x rounded-circle"></i>
+                    </div>
+                    <img src="./poert1.png" class="w-100 rounded-3" alt="">
+                </div>
+            </div>
+            <div class="image-container col">
+                <div class="position-relative overflow-hidden p-0" (click)="showImage('./port2.png'); changeDisplay(false)">
+                    <div class="img-overlay img-overlay-2 position-absolute rounded-3 d-flex justify-content-center align-items-center">
+                        <i class="fa fa-plus text-white fa-4x rounded-circle"></i>
+                    </div>
+                    <img src="./port2.png" class="w-100 rounded-3" alt="">
+                </div>
+            </div>
+            <div class="image-container col">
+                <div class="position-relative overflow-hidden p-0" (click)="showImage('./port3.png'); changeDisplay(false)">
+                    <div class="img-overlay img-overlay-3 position-absolute rounded-3 d-flex justify-content-center align-items-center">
+                        <i class="fa fa-plus text-white fa-4x rounded-circle"></i>
+                    </div>
+                    <img src="./port3.png" class="w-100 rounded-3" alt="">
+                </div>
+            </div>
+            <div class="image-container col">
+                <div class="position-relative overflow-hidden p-0" (click)="showImage('./poert1.png'); changeDisplay(false)">
+                    <div class="img-overlay img-overlay-4 position-absolute rounded-3 d-flex justify-content-center align-items-center">
+                        <i class="fa fa-plus text-white fa-4x rounded-circle"></i>
+                    </div>
+                    <img src="./poert1.png" class="w-100 rounded-3" alt="">
+                </div>
+            </div>
+            <div class="image-container col">
+                <div class="position-relative overflow-hidden p-0" (click)="showImage('./port2.png'); changeDisplay(false)">
+                    <div class="img-overlay img-overlay-5 position-absolute rounded-3 d-flex justify-content-center align-items-center">
+                        <i class="fa fa-plus text-white fa-4x rounded-circle"></i>
+                    </div>  
+                    <img src="./port2.png" class="w-100 rounded-3" alt="">
+                </div>
+            </div>
+            <div class="image-container col">
+                <div class="position-relative overflow-hidden p-0" (click)="showImage('./port3.png'); changeDisplay(false)">
+                    <div class="img-overlay img-overlay-6 position-absolute rounded-3 d-flex justify-content-center align-items-center">
+                        <i class="fa fa-plus text-white fa-4x rounded-circle"></i>
+                    </div>
+                    <img src="./port3.png" class="w-100 rounded-3" alt="">
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+</div>

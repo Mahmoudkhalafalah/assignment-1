@@ -1,0 +1,25 @@
+input{
+    border: none;
+    border-bottom: 1px solid rgb(209, 206, 206);
+    height: 50px;
+}
+input:focus{
+    outline: none;
+    box-shadow: none;
+    border-color: rgb(184, 184, 184);
+}
+.useNameText{
+    transition: all 400ms;
+}
+.translate{
+    transform: translateY(50px);
+}
+
+.btn-custom{
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--main-color);
+    --bs-btn-border-color: var(--main-color);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--main-color);
+    --bs-btn-hover-border-color: var(--main-color);
+}

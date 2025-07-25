@@ -1,0 +1,22 @@
+<nav class="navbar fixed-top navbar-expand-lg z-1" (document:scroll) = "changePadding($event)" [class] = "navPadding">
+    <div class="container fw-bold ">
+        <a class="navbar-brand text-uppercase text-white fs-2" routerLink="home">Start FrameWork</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5 gap-3">
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase text-white" routerLink="about" routerLinkActive="activLink">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase text-white" routerLink="portfolio" routerLinkActive="activLink">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase text-white" routerLink="contact" routerLinkActive="activLink">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,26 @@
+<div class="container-fluid vh-100">
+    <div class="d-flex flex-column justify-content-center align-items-center h-100 container">
+        <h1 class="title text-uppercase fw-bold secondary-text">
+            Contact component
+        </h1>
+        <div class=" mb-5 decoration d-flex gap-3 align-items-center">
+            <span class="before-line secondary-bg"></span>
+            <i class="fa fa-star fs-4 secondary-text my-3"></i>
+            <span class="after-line secondary-bg"></span>
+        </div>
+        <div class="contact-form w-75 d-flex flex-column gap-3 mt-5">
+            <p class="mb-0 useNameText text-success" [class.translate]="translateStates[0]">userName: </p>
+            <input type="text" class="form-control z-1" placeholder="userName" [(ngModel)]="userInputs[0]" (input)="checkInput(0)">
+             <p class="mb-0 useNameText text-success" [class.translate]="translateStates[1]">userAge: </p>
+            <input type="text" class="form-control z-1" placeholder="userAge" [(ngModel)]="userInputs[1]" (input)="checkInput(1)">
+             <p class="mb-0 useNameText text-success" [class.translate]="translateStates[2]">userEmail: </p>
+            <input type="email" class="form-control z-1" placeholder="userEmail" [(ngModel)]="userInputs[2]" (input)="checkInput(2)">
+             <p class="mb-0 useNameText text-success" [class.translate]="translateStates[3]">userPassword: </p>
+            <input type="password" class="form-control z-1" placeholder="userPassword" [(ngModel)]="userInputs[3]" (input)="checkInput(3)">
+
+            <button class="btn btn-custom mt-2 align-self-start">Send Message
+            </button>
+        </div>
+
+    </div>
+</div>

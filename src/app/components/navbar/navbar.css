@@ -1,0 +1,9 @@
+nav{
+    background-color: var(--second-color);
+    transition: 400ms all ;
+}
+
+.activLink{
+    background-color: var(--main-color);
+    border-radius: 10px;
+}
